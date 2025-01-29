@@ -1,0 +1,15 @@
+{
+  "name": "vanlifebackend",
+  "version": "1.0.0",
+  "description": "\"Vanlife Backend Server\"",
+  "main": "apps.js",
+  "scripts": {
+    "staging": "NODE_ENV=staging nodemon apps",
+    "production": "NODE_ENV=production nodemon apps"
+  },
+  "author": "\"Yeachen Abir",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
