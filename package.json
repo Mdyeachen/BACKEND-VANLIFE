@@ -4,8 +4,9 @@
   "description": "\"Vanlife Backend Server\"",
   "main": "apps.js",
   "scripts": {
-    "staging": "NODE_ENV=staging nodemon apps",
-    "production": "NODE_ENV=production nodemon apps"
+    "build": "NODE_ENV=staging node api/apps",
+    "staging": "NODE_ENV=staging nodemon api/apps",
+    "production": "NODE_ENV=production nodemon api/apps"
   },
   "author": "\"Yeachen Abir",
   "license": "ISC",
