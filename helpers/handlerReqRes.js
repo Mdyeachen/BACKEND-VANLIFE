@@ -38,9 +38,11 @@ handler.handleReqRes = (req, res) => {
    const vanId = param.trimPath.match(/^(api\/vans)\/([^/]+)$/) || [];
 
    if (vanId[2]){
+      console.log(vanId)
       param.vanId = vanId[2];
       chosenHandler = routers[vanId[1]] || notFound;
    } else {
+      console.log(param.trimPath + "Hello")
       chosenHandler = routers[param.trimPath] || notFound;
    }
 
